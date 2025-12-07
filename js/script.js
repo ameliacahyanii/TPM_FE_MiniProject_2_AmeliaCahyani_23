@@ -8,21 +8,21 @@ let products = [
     name: "Wireless Earbuds",
     category: "Electronics",
     price: 108,
-    desc: "Compact wireless earbuds delivering crisp audio and seamless Bluetooth connectivity.",
+    desc: "Compact wireless earbuds delivering crisp audio and seamless Bluetooth connectivity. With long-lasting battery life and noise-isolating design, they offer an immersive listening experience whether you're working out, commuting, or relaxing.",
     img: "./assets/product-1.svg",
   },
   {
     name: "Yoga Mat",
     category: "Fitness",
     price: 30,
-    desc: "A durable, non-slip yoga mat designed for stability and comfort.",
+    desc: "A durable, non-slip yoga mat designed for stability and comfort. Its cushioned surface supports your joints during stretching, balance training, and high-intensity workouts. Lightweight and easy to carry, perfect for home practice or studio sessions.",
     img: "./assets/product-2.svg",
   },
   {
     name: "Leather Backpack",
     category: "Accessories",
     price: 64,
-    desc: "A stylish genuine-leather backpack crafted for everyday use.",
+    desc: "A stylish genuine-leather backpack crafted for everyday use. Featuring multiple compartments for organized storage, it combines durability, elegance, and practicality ideal for work, travel, or casual outings.",
     img: "./assets/product-3.svg",
   },
 ];
@@ -63,7 +63,7 @@ const escapeHtml = (text) =>
 const placeholderImg = () =>
   "data:image/svg+xml;utf8," +
   encodeURIComponent(
-    '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="140"><rect fill="#eef6fb" width="100%" height="100%"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#9ecfe9" font-family="Inter, Arial" font-size="14">No Image</text></svg>'
+    '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><rect fill="#eef6fb" width="100%" height="100%"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#9ecfe9" font-family="Inter, Arial" font-size="14">No Image</text></svg>'
   );
 
 const makeBlobUrl = (blob) => {
