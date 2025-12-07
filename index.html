@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fumart - Seller</title>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spline+Sans:wght@300..700&family=Zen+Kaku+Gothic+Antique&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <h1 class="logo">Fumart <span>for Seller</span></h1>
+          <div class="profile">
+            <img src="./assets/ic-user.svg" alt="profile" />
+          </div>
+        </div>
+      </nav>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <nav class="nav">
+          <button class="sidebar-btn active">
+            <img src="./assets/ic-dashboard.svg" alt="Dashboard" />Dashboard
+          </button>
+
+          <button class="sidebar-btn">
+            <img src="./assets/ic-products.svg" alt="Products" />Products
+          </button>
+
+          <button class="sidebar-btn">
+            <img src="./assets/ic-orders.svg" alt="Orders" />Orders
+          </button>
+
+          <button class="sidebar-btn">
+            <img src="./assets/ic-settings.svg" alt="Settings" />Settings
+          </button>
+        </nav>
+
+        <div class="bottom-links">
+          <button class="sidebar-btn">
+            <img src="./assets/ic-help.svg" alt="Help" />Help
+          </button>
+
+          <button class="sidebar-btn">
+            <img src="./assets/ic-feedback.svg" alt="Feedback" />Feedback
+          </button>
+        </div>
+      </aside>
+
+      <!-- MAIN -->
+      <main class="main">
+        <header class="header" id="main-header">
+          <h1 class="page-title">Products</h1>
+          <div>
+            <button id="btn-add-view" class="add-btn">+ Add Product</button>
+          </div>
+        </header>
+
+        <section id="view-list" class="view active">
+          <div id="product-grid" class="grid"></div>
+        </section>
+
+        <!-- ADD PRODUCT -->
+        <section id="view-add" class="view">
+          <h1 class="form-page-title">Add Product</h1>
+          <div class="card-form">
+            <form id="form-add" class="form-table">
+              <div class="row">
+                <label>Product Name:</label>
+                <input name="name" required />
+              </div>
+
+              <div class="row">
+                <label>Product Category:</label>
+                <input name="category" required />
+              </div>
+
+              <div class="row">
+                <label>Price:</label>
+                <input name="price" type="number" min="0" required />
+              </div>
+
+              <div class="row">
+                <label>Desc:</label>
+                <textarea name="desc" rows="3" required></textarea>
+              </div>
+
+              <div class="row">
+                <label>Photo:</label>
+                <input type="file" name="imgFile" />
+              </div>
+
+              <hr />
+
+              <div class="form-actions">
+                <button type="button" id="cancel-add" class="btn-secondary">
+                  Cancel
+                </button>
+                <button type="submit" class="btn-primary">Add Product</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- UPDATE PRODUCT -->
+        <section id="view-edit" class="view">
+          <h1 class="form-page-title">Update Product</h1>
+
+          <div class="card-form">
+            <form id="form-edit" class="form-table">
+              <input type="hidden" name="index" />
+
+              <div class="row">
+                <label>Product Name:</label>
+                <input name="name" required />
+              </div>
+
+              <div class="row">
+                <label>Product Category:</label>
+                <input name="category" required />
+              </div>
+
+              <div class="row">
+                <label>Price:</label>
+                <input name="price" type="number" min="0" required />
+              </div>
+
+              <div class="row">
+                <label>Desc:</label>
+                <textarea name="desc" rows="3" required></textarea>
+              </div>
+
+              <div class="row">
+                <label>Photo:</label>
+                <input type="file" name="imgFile" />
+              </div>
+
+              <hr />
+
+              <div class="form-actions">
+                <button type="button" id="cancel-edit" class="btn-secondary">
+                  Cancel
+                </button>
+                <button type="submit" class="btn-primary">
+                  Update Product
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
